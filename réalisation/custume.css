@@ -1,12 +1,12 @@
 .sb-topnav{
-    background-color: #3f14a1 !important;
+    background-color: #6e1f8d !important;
 }
 .sb-sidenav{
-    background-color: #3f14a1 !important;
+    background-color: #bda0cad5 !important;
 }
 .sb-sidenav-footer{
 
-    background-color: #7c5f8100!important;
+    background-color: #bda0cad5!important;
 }
 .sb-nav-fixed{
     background-color: #e3e1e4d3 !important;
@@ -21,10 +21,10 @@
     width: 200px !important;
 }
 .btn-primary{
-    background-color:#3f14a1 !important ;
+    background-color:#418d41 !important ;
 }
 #showFormBtn{
-    background-color:#3f14a1 !important ;
+    background-color:#bda0cad5 !important ;
     color: white;
 }
 #editB{
@@ -33,5 +33,9 @@
 }
 #deletB{
     background-color: rgb(184, 0, 0) !important;
+    color: white;
+}
+#showPrint{
+    background-color:#bda0cad5 !important ;
     color: white;
 }

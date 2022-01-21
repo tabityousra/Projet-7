@@ -11,7 +11,7 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="réalisation.html">&#128214;Gestion des ouvrages v1</a>
+        <a class="navbar-brand ps-3" href="réalisation.html">&#128214;Gestion des ouvrages v2</a>
         <!-- Sidebar Toggle-->
       <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button> 
@@ -30,7 +30,7 @@
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                      yousra benslimane
+                      Benslimane Youssra
                 </div>
             </nav>
         </div>
@@ -50,11 +50,11 @@
 
                             <form id="formSubmit" class="row g-3">
                                 <div class="col-md-12">
-                                    <label for="inputTitle" class="form-label">Title</label>
+                                    <label for="inputTitle" class="form-label">Titre</label>
                                     <input required type="text" class="form-control" id="inputTitle">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputAuthor" class="form-label">Author</label>
+                                    <label for="inputAuthor" class="form-label">Auteur</label>
                                     <input required type="text" class="form-control" id="inputAuthor">
                                 </div>
                                 <div class="col-12">
@@ -116,6 +116,7 @@
                             <table class="table" id="worksTable">
                                 <thead>
                                     <tr>
+                                        <th>id</th>
                                         <th>Titre</th>
                                         <th>Auteur</th>
                                         <th>Prix</th>
@@ -129,6 +130,7 @@
 
                                 </tbody>
                             </table>
+                        <button id="showPrint" class="btn-custom-btn-secondary-custom" onclick="printData()">Iprimer</button>
                         </div>
                     </div>
                 </div>
@@ -147,8 +149,9 @@
             </footer>
         </div>
     </div>
-    <script src="java.js"></script>
-
+    <script src="gestionOuvrage.js"></script>
+    <script src="Ouvrage.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
