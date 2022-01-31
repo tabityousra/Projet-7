@@ -13,27 +13,27 @@ class GestionOuvrage{
        this.#ouvrageList.push(ouvrage)
        this.enregistrer()
    }
-   modifierOuvrage(ouvrage) {
-    this.ouvrir()
-    for (var i = 0; i < this.#ouvrageList.length; i++) {
-        if (ouvrage.id == this.#ouvrageList[i].id) {
-            this.#ouvrageList[i] = ouvrage
-            this.enregistrer()
-        }
-    }
-  }
-  getItem(id) {
-    for (var i = 0; i < this.ouvrageList.length; i++) {
-        if (id == this.ouvrageList[i].id) {
-            return this.ouvrageList[i]
-        }
-    }
-  }
-  suprimerOuvrage() {
-    this.#ouvrageList =  this.#ouvrageList.filter(function(ouvrage){
-        return ouvrage.id != id
-    })
-    this.enregistrer()
+//    modifierOuvrage(ouvrage) {
+//     this.ouvrir()
+//     for (var i = 0; i < this.#ouvrageList.length; i++) {
+//         if (ouvrage.id == this.#ouvrageList[i].id) {
+//             this.#ouvrageList[i] = ouvrage
+//             this.enregistrer()
+//         }
+//     }
+//   }
+//   getItem(id) {
+//     for (var i = 0; i < this.ouvrageList.length; i++) {
+//         if (id == this.ouvrageList[i].id) {
+//             return this.ouvrageList[i]
+//         }
+//     }
+//   }
+//   suprimerOuvrage() {
+//     this.#ouvrageList =  this.#ouvrageList.filter(function(ouvrage){
+//         return ouvrage.id != id
+//     })
+//     this.enregistrer()
 }
 // getAllItem(){
 //     this.ouvrir()
@@ -41,16 +41,16 @@ class GestionOuvrage{
 //         return a.titre.localCompare(b.titre)
 //     })
 // }
-enregistrer() {
+// enregistrer() {
 
-    var stringList = JSON.stringify(this.#ouvrageList)
-    localStorage.setItem('ouvrageList', stringList)
-    localStorage.setItem('compteur', this.#compteur)
-}
+//     var stringList = JSON.stringify(this.#ouvrageList)
+//     localStorage.setItem('ouvrageList', stringList)
+//     localStorage.setItem('compteur', this.#compteur)
+// }
 
-ouvrir() {
-    this.#ouvrageList = JSON.parse(localStorage.getItem("ouvrageList") || "[]")
-    this.#compteur = parseInt(localStorage.getItem('compteur') || 0)
-}
+// ouvrir() {
+//     this.#ouvrageList = JSON.parse(localStorage.getItem("ouvrageList") || "[]")
+//     this.#compteur = parseInt(localStorage.getItem('compteur') || 0)
+// }
    
-}
+// }
